@@ -45,17 +45,14 @@ class Model(object):
         pred_file = os.path.join(tmp_folder, self.PRED_FILE)
         log_file = os.path.join(tmp_folder, self.LOG_FILE)
         with open(data_file, "w") as f:
-            f.write("smiles"+os.linesep)
             for smiles in smiles_list:
                 f.write(smiles + os.linesep)
         run_file = os.path.join(tmp_folder, self.RUN_FILE)
         with open(run_file, "w") as f:
             lines = [
-                "python {0}/run_cddd.py -i {1} -o {2} --smiles_header 'smiles' --model_dir {3}/default_model/".format(
-                    self.framework_dir,
+                "soltrannet {0} {1}".format(
                     data_file,
-                    pred_file,
-                    self.checkpoints_dir
+                    pred_file
                 )
             ]
             f.write(os.linesep.join(lines))
@@ -66,18 +63,10 @@ class Model(object):
             ).wait()
         with open(pred_file, "r") as f:
             reader = csv.reader(f)
-            h = next(reader)
             R = []
             for r in reader:
-                R += [{"embedding": [float(x) for x in r]}]
-        meta = {
-            "embedding": h
-        }
-        result = {
-            'result': R,
-            'meta': meta
-        }
-        return result
+                R += [{"solubility": float(r[1])}]
+        return R
 
 
 class Artifact(BentoServiceArtifact):
