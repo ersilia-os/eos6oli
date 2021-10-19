@@ -1,2 +1,2 @@
-# eos-template
-Template repository to add new models to the Ersilia Model Hub
+# eos6oli
+Aqueous solubility. Insoluble is < -4.
