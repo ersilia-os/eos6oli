@@ -1,26 +1,40 @@
 # Aqueous solubility prediction
 
-## Model Identifiers
-- Slug: soltrannet-aqueous-solubility
-- Ersilia ID: eos6oli
-- Tags: LogS,	physchem,	ADMET
+Fast aqueous solubility prediction based on the Molecule Attention Transformer (MAT). The authors used AqSolDB to fine-tune the MAT network to solubility prediction, achieving competitive scores in the Second Challenge to Predict Aqueous Solubility (SC2).
 
-## Model Description
-A machine learning tool for fast aqueous solubility prediction
-- Input: SMILES
-- Output: Probability (Probability of Log S > -4)
-- Model type: Classification
-- Mode of Training: Pretrained
-- Training data: 9,982 compounds (https://github.com/francoep/SolTranNet_paper/blob/main/soltrannet_data.tar.gz)
-- Experimentally validated: No
+## Identifiers
 
-## Source code
-This model was published by Paul G. Francoeur and David R. Koes. SolTranNet–A Machine Learning Tool for Fast Aqueous Solubility Prediction. *J. Chem. Inf. Model.* 2021, 61, 6, 2530–2536. DOI:https://doi.org/10.1021/acs.jcim.1c00331
-- Code: https://github.com/gnina/SolTranNet
-- Chedkpoints: https://github.com/gnina/SolTranNet/blob/main/soltrannet/soltrannet_aqsol_trained.weights
+* EOS model ID: `eos6oli`
+* Slug: `soltrannet-aqueous-solubility`
+
+## Characteristics
+
+* Input: `Compound`
+* Input Shape: `Single`
+* Task: `Regression`
+* Output: `Experimental value`
+* Output Type: `Float`
+* Output Shape: `Single`
+* Interpretation: Predicted LogS (log of the solubility)
+
+## References
+
+* [Publication](https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331)
+* [Source Code](https://github.com/gnina/SolTranNet)
+* Ersilia contributor: [miquelduranfrigola](https://github.com/miquelduranfrigola)
+
+## Citation
+
+If you use this model, please cite the [original authors](https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
 
 ## License
-The Apache 2.0 license applies to all parts of the repository. This repository uses the externally maintained library "SolTraNet", located at `/model` and licensed under a Apache 2.0 License
 
-## History
-This model was downloaded and incorporated ion October 19, 2021
+This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a Apache-2.0 license.
+
+Notice: Ersilia grants access to these models 'as is' provided by the original authors, please refer to the original code repository and/or publication if you use the model in your research.
+
+## About Us
+
+The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
+
+[Help us](https://www.ersilia.io/donate) achieve our mission!
