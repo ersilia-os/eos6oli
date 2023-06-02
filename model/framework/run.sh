@@ -1,0 +1,1 @@
+soltrannet $1 $2
