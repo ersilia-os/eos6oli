@@ -23,6 +23,11 @@ Fast aqueous solubility prediction based on the Molecule Attention Transformer (
 * [Source Code](https://github.com/gnina/SolTranNet)
 * Ersilia contributor: [miquelduranfrigola](https://github.com/miquelduranfrigola)
 
+## Ersilia model URLs
+* [GitHub](https://github.com/ersilia-os/eos6oli)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6oli.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos6oli) (AMD64)
+
 ## Citation
 
 If you use this model, please cite the [original authors](https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).

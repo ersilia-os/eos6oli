@@ -28,5 +28,10 @@
     "Publication": "https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331",
     "Source Code": "https://github.com/gnina/SolTranNet",
     "License": "Apache-2.0",
-    "Contributor": "miquelduranfrigola"
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6oli.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos6oli",
+    "Docker Architecture": [
+        "AMD64"
+    ]
 }
