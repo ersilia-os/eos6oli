@@ -26,7 +26,7 @@ Fast aqueous solubility prediction based on the Molecule Attention Transformer (
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos6oli)
 * [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6oli.zip)
-* [DockerHub](https://hub.docker.com/r/ersiliaos/eos6oli) (AMD64)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos6oli) (AMD64, ARM64)
 
 ## Citation
 
