@@ -3,21 +3,18 @@
     "Slug": "soltrannet-aqueous-solubility",
     "Status": "Ready",
     "Title": "Aqueous solubility prediction",
-    "Description": "Fast aqueous solubility prediction based on the Molecule Attention Transformer (MAT). The authors used AqSolDB to fine-tune the MAT network to solubility prediction, achieving competitive scores in the Second Challenge to Predict Aqueous Solubility (SC2).\n",
+    "Description": "Fast aqueous solubility prediction based on the Molecule Attention Transformer (MAT). The authors used AqSolDB to fine-tune the MAT network to solubility prediction, achieving competitive scores in the Second Challenge to Predict Aqueous Solubility (SC2).",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Local",
     "Source Type": "External",
+    "Task": "Annotation",
+    "Subtask": "Property calculation or prediction",
     "Input": [
         "Compound"
     ],
     "Input Dimension": 1,
-    "Task": "Annotation",
-    "Subtask": "Property calculation or prediction",
-    "Biomedical Area": [
-        "ADMET"
-    ],
-    "Target Organism": [
-        "Not Applicable"
-    ],
     "Output": [
         "Experimental value"
     ],
@@ -29,20 +26,25 @@
         "ADME",
         "LogS"
     ],
-    "Publication": "https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331",
+    "Biomedical Area": [
+        "ADMET"
+    ],
+    "Target Organism": [
+        "Not Applicable"
+    ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2021,
+    "Publication": "https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331",
     "Source Code": "https://github.com/gnina/SolTranNet",
     "License": "Apache-2.0",
     "Contributor": "miquelduranfrigola",
     "Incorporation Date": "2021-10-19",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6oli.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos6oli",
     "Docker Architecture": [
         "AMD64",
         "ARM64"
     ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6oli.zip",
-    "Deployment": [
-        "Local"
-    ]
+    "Model Size": 1.0,
+    "Environment Size": 5669.0
 }
