@@ -41,7 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `5669`
+- **Image Size (Mb):** `5576.54`
 
+**Computational Performance (seconds):**
+- 10 inputs: `34.08`
+- 100 inputs: `24.47`
+- 10000 inputs: `476.4`
 
 ### References
 - **Source Code**: [https://github.com/gnina/SolTranNet](https://github.com/gnina/SolTranNet)
