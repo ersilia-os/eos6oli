@@ -4,21 +4,25 @@
     "Status": "Ready",
     "Title": "Aqueous solubility prediction",
     "Description": "Fast aqueous solubility prediction based on the Molecule Attention Transformer (MAT). The authors used AqSolDB to fine-tune the MAT network to solubility prediction, achieving competitive scores in the Second Challenge to Predict Aqueous Solubility (SC2).\n",
-    "Mode": "Pretrained",
+    "Source": "Local",
+    "Source Type": "External",
     "Input": [
         "Compound"
     ],
-    "Input Shape": "Single",
-    "Task": [
-        "Regression"
+    "Input Dimension": 1,
+    "Task": "Annotation",
+    "Subtask": "Property calculation or prediction",
+    "Biomedical Area": [
+        "ADMET"
+    ],
+    "Target Organism": [
+        "Not Applicable"
     ],
     "Output": [
         "Experimental value"
     ],
-    "Output Type": [
-        "Float"
-    ],
-    "Output Shape": "Single",
+    "Output Dimension": 1,
+    "Output Consistency": "Fixed",
     "Interpretation": "Predicted LogS (log of the solubility)",
     "Tag": [
         "Solubility",
@@ -26,13 +30,19 @@
         "LogS"
     ],
     "Publication": "https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331",
+    "Publication Type": "Peer reviewed",
+    "Publication Year": 2021,
     "Source Code": "https://github.com/gnina/SolTranNet",
     "License": "Apache-2.0",
     "Contributor": "miquelduranfrigola",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6oli.zip",
+    "Incorporation Date": "2021-10-19",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos6oli",
     "Docker Architecture": [
         "AMD64",
         "ARM64"
+    ],
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6oli.zip",
+    "Deployment": [
+        "Local"
     ]
 }
