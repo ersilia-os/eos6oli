@@ -2,8 +2,7 @@
 
 Fast aqueous solubility prediction based on the Molecule Attention Transformer (MAT). The authors used AqSolDB to fine-tune the MAT network to solubility prediction, achieving competitive scores in the Second Challenge to Predict Aqueous Solubility (SC2).
 
-This model was incorporated on 2021-10-19.
-
+This model was incorporated on 2021-10-19.Last packaged on 2025-10-13.
 
 ## Information
 ### Identifiers
@@ -42,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `6953`
-- **Image Size (Mb):** `5576.54`
+- **Image Size (Mb):** `6864.56`
 
 **Computational Performance (seconds):**
-- 10 inputs: `34.08`
-- 100 inputs: `24.47`
-- 10000 inputs: `476.4`
+- 10 inputs: `28.81`
+- 100 inputs: `18.77`
+- 10000 inputs: `117.73`
 
 ### References
 - **Source Code**: [https://github.com/gnina/SolTranNet](https://github.com/gnina/SolTranNet)
