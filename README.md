@@ -4,6 +4,7 @@ Fast aqueous solubility prediction based on the Molecule Attention Transformer (
 
 This model was incorporated on 2021-10-19.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos6oli`
@@ -13,7 +14,7 @@ This model was incorporated on 2021-10-19.
 - **Task:** `Annotation`
 - **Subtask:** `Property calculation or prediction`
 - **Biomedical Area:** `ADMET`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Solubility`, `ADME`, `LogS`
 
 ### Input
