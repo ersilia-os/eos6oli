@@ -50,7 +50,7 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://github.com/gnina/SolTranNet](https://github.com/gnina/SolTranNet)
-- **Publication**: [https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331](https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331)
+- **Publication**: [https://doi.org/10.1021/acs.jcim.1c00331](https://doi.org/10.1021/acs.jcim.1c00331)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2021`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
