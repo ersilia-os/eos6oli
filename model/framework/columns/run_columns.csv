@@ -1,2 +1,2 @@
 name,type,direction,description
-solubility,float,low,Predicted solubility in LogS
+solubility,float,high,Predicted solubility in LogS
