@@ -1,6 +1,6 @@
 # Aqueous solubility prediction
 
-Fast aqueous solubility prediction based on the Molecule Attention Transformer (MAT). The authors used AqSolDB to fine-tune the MAT network to solubility prediction, achieving competitive scores in the Second Challenge to Predict Aqueous Solubility (SC2).
+Predicts aqueous solubility on a log molar scale using SolTranNet, which Francoeur and Koes built as a deliberately fast transformer operating straight on SMILES. Their emphasis was throughput: the tool was designed to filter very large virtual libraries where slower graph models become impractical, accepting some accuracy in exchange. Solubility measurements aggregated from different sources carry appreciable experimental scatter, which bounds how precisely any model fitted to them can perform.
 
 This model was incorporated on 2021-10-19.Last packaged on 2025-10-13.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2021-10-19.Last packaged on 2025-10-13.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Predicted LogS (log of the solubility)
+- **Interpretation:** Predicted aqueous solubility as logS in mol/L, where higher values indicate greater solubility.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
