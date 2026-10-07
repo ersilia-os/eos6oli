@@ -1,6 +1,6 @@
 # Aqueous solubility prediction
 
-Predicts aqueous solubility on a log molar scale using SolTranNet, which Francoeur and Koes built as a deliberately fast transformer operating straight on SMILES. Their emphasis was throughput: the tool was designed to filter very large virtual libraries where slower graph models become impractical, accepting some accuracy in exchange. Solubility measurements aggregated from different sources carry appreciable experimental scatter, which bounds how precisely any model fitted to them can perform.
+Predicts aqueous solubility as logS with SolTranNet, a molecule attention transformer that Francoeur and Koes deliberately kept small, at 3,393 parameters, after finding that larger models did worse here. Training on AqSolDB gave a scaffold-split cross-validation RMSE of 1.46, and 1.71 on a withheld set; used as a filter it caught 94.8% of the insoluble compounds in the Second Challenge to Predict Aqueous Solubility. Throughput was the design goal, so no conformer or distance matrix is computed.
 
 This model was incorporated on 2021-10-19.Last packaged on 2025-10-13.
 
