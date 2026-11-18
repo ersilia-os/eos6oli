@@ -2,7 +2,8 @@
 
 Predicts aqueous solubility as logS with SolTranNet, a molecule attention transformer that Francoeur and Koes deliberately kept small, at 3,393 parameters, after finding that larger models did worse here. Training on AqSolDB gave a scaffold-split cross-validation RMSE of 1.46, and 1.71 on a withheld set; used as a filter it caught 94.8% of the insoluble compounds in the Second Challenge to Predict Aqueous Solubility. Throughput was the design goal, so no conformer or distance matrix is computed.
 
-This model was incorporated on 2021-10-19.Last packaged on 2025-10-13.
+This model was incorporated on 2021-10-19.
+Last packaged on 2025-10-13.
 
 ## Information
 ### Identifiers
@@ -28,7 +29,7 @@ This model was incorporated on 2021-10-19.Last packaged on 2025-10-13.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| solubility | float | low | Predicted solubility in LogS |
+| solubility | float | high | Predicted solubility in LogS |
 
 
 ### Source and Deployment
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos6oli](https://hub.docker.com/r/ersiliaos/eos6oli)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6oli.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6oli.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos6oli_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos6oli_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
